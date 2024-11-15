@@ -55,6 +55,7 @@
 
 .col {
     flex-grow: 1;
+    
 }
 
 .big{
@@ -253,8 +254,41 @@ main{
     right: 4px;
 }
 
+.main-navbar{
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    width: 100%;
+    flex-wrap: wrap;
+}
 
+.main-navbar a{
+    text-decoration: none;
+    color: #808080;
+    font-size: 12px;
+}
 
+.album h3{
+    color: #fff;
+    padding: 30px 16px;
+}
+
+.album .col{
+    width: calc(100% /2);
+}
+
+.title-album h4{
+    color: #fff;
+    text-align: center;
+    padding: 6px 0;
+}
+
+.title-album p{
+    color: #808080;
+    text-align: center;
+    font-size: 12px;
+    padding-bottom: 8px;
+}
 /*----------------
     FOOTER
 ------------------*/
@@ -326,6 +360,11 @@ footer{
 /*Medium Devices*/
 
 @media screen and (min-width: 640px) {
+
+    .album .col{
+        width: calc(100% /3);
+    }
+    
     
     
 }
@@ -333,6 +372,11 @@ footer{
 /*Large Devices*/
 
 @media screen and (min-width: 876px) {
+
+    .album .col{
+        width: calc(100% /6);
+    }
+    
     
 
 }
