@@ -53,10 +53,9 @@
     gap: 30px;
 }
 
-.col {
+/*.col {
     flex-grow: 1;
-    
-}
+}*/
 
 .big{
     display: flex;
@@ -260,6 +259,7 @@ main{
     padding-top: 20px;
     width: 100%;
     flex-wrap: wrap;
+    
 }
 
 .main-navbar a{
@@ -270,11 +270,15 @@ main{
 
 .album h3, .created h3, .popular h3{
     color: #fff;
-    padding: 30px 16px;
+    padding: 30px 0;
+}
+
+.album, .created, .popular{
+    margin: 0px 16px;
 }
 
 .album .col{
-    width: calc(100% /2);
+    width: calc((100% /2) - 24px);
 }
 
 .title-album h4{
@@ -291,7 +295,7 @@ main{
 }
 
 .created .col{
-    width: calc(100% /2);
+    width: calc((100% /2) - 24px);
 }
 
 .created h3{
@@ -301,13 +305,12 @@ main{
 
 .created p{
     color: #808080;
-    padding-left: 16px;
     padding-bottom: 20px;
     font-size: 13px;
 }
 
 .popular .col{
-    width: calc(100% /2);
+    width: calc((100% /2) - 24px);
 }
 
 .popular h3{
@@ -317,7 +320,6 @@ main{
 
 .popular p{
     color: #808080;
-    padding-left: 16px;
     padding-bottom: 20px;
     font-size: 13px;
 }
@@ -392,15 +394,15 @@ footer{
 @media screen and (min-width: 640px) {
 
     .album .col{
-        width: calc(100% /3);
+        width: calc((100% /3) - 24px);
     }
 
     .created .col{
-        width: calc(100% /3);
+        width: calc((100% /3) - 24px);
     }
 
     .popular .col{
-        width: calc(100% /3);
+        width: calc((100% /3) - 24px);
     }
     
 }
@@ -410,15 +412,15 @@ footer{
 @media screen and (min-width: 876px) {
 
     .album .col{
-        width: calc(100% /6);
+        width: calc((100% /6) - 24px);
     }
     
     .created .col{
-        width: calc(100% /6);
+        width: calc((100% /6) - 24px);
     }
 
     .popular .col{
-        width: calc(100% /6);
+        width: calc((100% /6) - 24px);
     }
     
 }
