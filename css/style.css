@@ -82,6 +82,14 @@ body {
     
 }
 
+.x{
+    background-color: transparent;
+    border-radius: 30px;
+    color: white;
+    padding: 10px 30px;
+
+}
+
 .btn-large {
     padding: 10px 20px;
     font-size: 16px;
@@ -230,6 +238,22 @@ main{
     background-color: #141922;
     overflow-y: auto;
 }
+
+.banner{
+    background-color: #080b12;
+    position: sticky;
+    top: 0;
+    right: 0;
+    height: 82px;
+}
+
+.banner button{
+    position: absolute;
+    top: 12px;
+    right: 4px;
+}
+
+
 
 /*----------------
     FOOTER
