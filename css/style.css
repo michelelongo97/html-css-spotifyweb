@@ -99,7 +99,56 @@ header{
     width: 50px;
     flex-shrink: 0;
     background-color: black;
-    
+}
+
+header .row{
+    flex-direction: column;
+}
+
+.logo-small{
+    padding: 10px 10px;
+}
+
+.logo-large{
+    display: none;
+}
+
+header .header-top{
+    height: 60%;
+    width: 50px;
+    color: #fff;
+    justify-content: flex-start;
+}
+
+header .header-bottom{
+    height: 40%;
+    width: 50px;
+    color: white;
+    justify-content: flex-end;
+}
+
+.header-top li span{
+    display: none;
+}
+
+.header-top li{
+    padding: 5px 10px;
+    list-style: none;
+}
+
+.header-bottom img:first-child{
+    padding-bottom: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+
+}
+
+.header-bottom img:last-child{
+    padding: 2px;
+    margin: 10px;
+    background-color: #808080;
+    border-radius: 50%;
+    height: 30px;
 }
 
 
@@ -118,7 +167,7 @@ main{
 footer{
     height: 90px;
     background-color: #282828;
-} 
+}
 
 /*----------------
     RESPONSIVE
@@ -128,7 +177,29 @@ footer{
 @media screen and (min-width: 576px) {
     header {
         width: 240px;
+        flex-shrink: 0;
     }
+
+    .logo-small{
+        display: none;
+    }
+
+    .logo-large{
+        display: block;
+        padding: 20px 0;
+        padding-left: 15px;
+        width: 150px;
+    }
+
+    .header-top li span{
+        display: inline;
+        color: white;
+        text-align: left;
+        
+    }
+    
+    
+    
     
 }
 
