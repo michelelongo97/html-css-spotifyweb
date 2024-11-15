@@ -268,7 +268,7 @@ main{
     font-size: 12px;
 }
 
-.album h3{
+.album h3, .created h3, .popular h3{
     color: #fff;
     padding: 30px 16px;
 }
@@ -289,6 +289,44 @@ main{
     font-size: 12px;
     padding-bottom: 8px;
 }
+
+.created .col{
+    width: calc(100% /2);
+}
+
+.created h3{
+    color: #fff;
+    padding-bottom: 6px;
+}
+
+.created p{
+    color: #808080;
+    padding-left: 16px;
+    padding-bottom: 20px;
+    font-size: 13px;
+}
+
+.popular .col{
+    width: calc(100% /2);
+}
+
+.popular h3{
+    color: #fff;
+    padding-bottom: 6px;
+}
+
+.popular p{
+    color: #808080;
+    padding-left: 16px;
+    padding-bottom: 20px;
+    font-size: 13px;
+}
+
+.popular .art img{
+    border-radius: 50%;
+}
+
+
 /*----------------
     FOOTER
 ------------------*/
@@ -346,15 +384,7 @@ footer{
         width: 100%;
         
     }
-    
 
-  
-
-   
-    
-    
-    
-    
 }
 
 /*Medium Devices*/
@@ -364,8 +394,14 @@ footer{
     .album .col{
         width: calc(100% /3);
     }
-    
-    
+
+    .created .col{
+        width: calc(100% /3);
+    }
+
+    .popular .col{
+        width: calc(100% /3);
+    }
     
 }
 
@@ -377,8 +413,14 @@ footer{
         width: calc(100% /6);
     }
     
-    
+    .created .col{
+        width: calc(100% /6);
+    }
 
+    .popular .col{
+        width: calc(100% /6);
+    }
+    
 }
 
 
