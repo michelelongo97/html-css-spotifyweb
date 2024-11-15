@@ -74,12 +74,12 @@ body {
     BUTTONS
 ------------------*/
 .btn {
-    background-color: white;
+    background-color: #808080;
     font-family: inherit;
     border: none;
-    padding: 6px 12px;
+    padding: 0px 6px;
     cursor: pointer;
-    border-radius: 20px;
+    
 }
 
 .btn-large {
@@ -99,10 +99,10 @@ header{
     width: 50px;
     flex-shrink: 0;
     background-color: black;
-}
-
-header .row{
+    display: flex;
     flex-direction: column;
+    overflow-y: auto;
+    
 }
 
 .logo-small{
@@ -113,30 +113,79 @@ header .row{
     display: none;
 }
 
-header .header-top{
+/*header .header-top{
     height: 60%;
     width: 50px;
     color: #fff;
     justify-content: flex-start;
-}
+}*/
 
-header .header-bottom{
-    height: 40%;
-    width: 50px;
-    color: white;
-    justify-content: flex-end;
-}
-
-.header-top li span{
+.header-nav li span{
     display: none;
+    padding-left: 8px;
+    font-size: 13px;
 }
 
-.header-top li{
+.header-nav li{
     padding: 5px 10px;
+    display: flex;
+    align-items: center;
     list-style: none;
 }
 
-.header-bottom img:first-child{
+.header-nav li img{
+    height: 26px;
+}
+
+.playlist{
+    flex-grow: 1;
+    padding: 10px;
+    color: #808080;
+    /*display: none;*/
+}
+
+.playlist h3, .playlist button,
+.playlist span, .playlist ul{
+    display: none;
+}
+
+.playlist h3{
+    color: white;
+    padding: 10px 0;
+}
+
+.playlist button{
+    font-size: 24px;
+}
+
+.playlist span{
+    padding-left: 8px;
+}
+
+.playlist ul{
+    padding-top: 14px;
+}
+
+.playlist li{
+    padding: 8px 0;
+}
+
+.header-bottom{
+    /*height: 40%;
+    width: 50px;*/
+    display: flex;
+    /*flex-wrap: wrap;*/
+    color: white;
+    /*justify-content: flex-end;*/
+    align-items: center;
+}
+
+.header-bottom img{
+    height: 26px;
+    /*flex-wrap: wrap;*/
+}
+
+/*.header-bottom img:first-child{
     padding-bottom: 10px;
     padding-left: 15px;
     padding-right: 15px;
@@ -149,7 +198,8 @@ header .header-bottom{
     background-color: #808080;
     border-radius: 50%;
     height: 30px;
-}
+}*/
+
 
 
 /*----------------
@@ -191,12 +241,19 @@ footer{
         width: 150px;
     }
 
-    .header-top li span{
+    .header-nav li span{
         display: inline;
         color: white;
-        text-align: left;
-        
     }
+
+    .playlist h3, .playlist button,
+    .playlist span, .playlist ul{
+        display: inline-block;
+    }
+
+  
+
+   
     
     
     
