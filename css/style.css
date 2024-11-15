@@ -111,14 +111,14 @@ header{
 
 .logo-large{
     display: none;
+    padding: 20px 0;
+    padding-left: 9px;
+    width: 150px;
 }
 
-/*header .header-top{
-    height: 60%;
-    width: 50px;
-    color: #fff;
-    justify-content: flex-start;
-}*/
+.header-nav{
+    padding-left: 2px;
+}
 
 .header-nav li span{
     display: none;
@@ -141,7 +141,6 @@ header{
     flex-grow: 1;
     padding: 10px;
     color: #808080;
-    /*display: none;*/
 }
 
 .playlist h3, .playlist button,
@@ -168,37 +167,58 @@ header{
 
 .playlist li{
     padding: 8px 0;
+    font-size: 13px;
 }
 
 .header-bottom{
-    /*height: 40%;
-    width: 50px;*/
     display: flex;
-    /*flex-wrap: wrap;*/
+    flex-wrap: wrap;
     color: white;
-    /*justify-content: flex-end;*/
+    margin-bottom: 10px;
+    justify-content: center;
+}
+
+.header-bottom div{
+    display: flex;
     align-items: center;
 }
 
-.header-bottom img{
+.download img{
+    height: 18px;
+}
+
+.user-profile img{
     height: 26px;
-    /*flex-wrap: wrap;*/
 }
 
-/*.header-bottom img:first-child{
+.download span{
+    display: none;
+    padding: 0px 10px;
+    color: #808080;
+    font-size: 13px;
+}
+
+.user-profile span{
+    display: none;
+    padding: 0px 10px;
+}
+
+.download{
     padding-bottom: 10px;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-right: 5px;
 
 }
 
-.header-bottom img:last-child{
+.user-profile{
+    padding-top: 10px;;
+}
+
+.user-profile img{
     padding: 2px;
-    margin: 10px;
     background-color: #808080;
     border-radius: 50%;
     height: 30px;
-}*/
+}
 
 
 
@@ -236,9 +256,7 @@ footer{
 
     .logo-large{
         display: block;
-        padding: 20px 0;
-        padding-left: 15px;
-        width: 150px;
+       
     }
 
     .header-nav li span{
@@ -250,6 +268,27 @@ footer{
     .playlist span, .playlist ul{
         display: inline-block;
     }
+
+    .header-bottom{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .download span, .user-profile span{
+        display: inline-block;
+    }
+
+    .download{
+        width: 100%;
+        border-bottom: 1px solid #808080
+        
+    }
+
+    .user-profile{
+        width: 100%;
+        
+    }
+    
 
   
 
