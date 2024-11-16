@@ -337,6 +337,82 @@ footer{
     background-color: #282828;
 }
 
+footer > .row{
+    align-items: center;
+}
+
+.song{
+    width: 25%;
+}
+
+.song .row{
+    /*padding-top: 20px;*/
+    align-items: center;
+    justify-content: space-around;
+}
+
+.song .col img{
+    width: 30px;
+    height: 30px;
+}
+
+.song .col h4{
+    color: #fff;
+}
+
+.song .col p{
+    color: #808080;
+    font-size: 12px;
+}
+
+.song .col p i{
+    font-size: 16px;
+}
+
+.player{
+    width: 50%;
+}
+
+.player .col{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.player .col i{
+    color: #fff;
+    font-size: 26px;
+    padding: 0px 10px;
+}
+
+.player .col i:nth-child(3){
+    font-size: 40px;
+    padding: 0px 40px;
+}
+
+.player .col p{
+    color: #fff;
+    padding: 8px 4px;
+    font-size: 12px;
+}
+
+.song-bar{
+    width: 180px;
+    height: 6px;
+    color: transparent;
+    background-color: #808080;
+    border-radius: 10px;
+}
+
+/*.rep-song-bar{
+    width: 20px;
+    color: white;
+}*/
+
+.extra{
+    width: 25%;
+}
+
 /*----------------
     RESPONSIVE
 ------------------*/
@@ -394,15 +470,15 @@ footer{
 @media screen and (min-width: 640px) {
 
     .album .col{
-        width: calc((100% /3) - 24px);
+        width: calc((100% /4) - 24px);
     }
 
     .created .col{
-        width: calc((100% /3) - 24px);
+        width: calc((100% /4) - 24px);
     }
 
     .popular .col{
-        width: calc((100% /3) - 24px);
+        width: calc((100% /4) - 24px);
     }
     
 }
