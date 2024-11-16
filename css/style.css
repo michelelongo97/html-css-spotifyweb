@@ -339,25 +339,28 @@ footer{
 
 footer > .row{
     align-items: center;
+    padding: 10px 6px;
 }
 
 .song{
-    width: 25%;
+    width: 28%;
 }
 
 .song .row{
     /*padding-top: 20px;*/
     align-items: center;
-    justify-content: space-around;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
 }
 
 .song .col img{
-    width: 30px;
-    height: 30px;
+    width: 36px;
+    height: 36px;
 }
 
 .song .col h4{
     color: #fff;
+    font-size: 16px;
 }
 
 .song .col p{
@@ -365,12 +368,17 @@ footer > .row{
     font-size: 12px;
 }
 
-.song .col p i{
+.song .col:nth-child(2){
+    line-height: 13px;
+}
+
+.song .col div i{
     font-size: 16px;
+    color: #808080;
 }
 
 .player{
-    width: 50%;
+    width: 44%;
 }
 
 .player .col{
@@ -387,7 +395,7 @@ footer > .row{
 
 .player .col i:nth-child(3){
     font-size: 40px;
-    padding: 0px 40px;
+    padding: 0px 30px;
 }
 
 .player .col p{
@@ -410,7 +418,23 @@ footer > .row{
 }*/
 
 .extra{
-    width: 25%;
+    width: 28%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.extra i{
+    color: white;
+    padding: 0px 4px;
+}
+
+.volume-bar{
+    width: 120px;
+    height: 6px;
+    color: transparent;
+    background-color: #808080;
+    border-radius: 10px;
 }
 
 /*----------------
@@ -460,7 +484,10 @@ footer > .row{
 
     .user-profile{
         width: 100%;
-        
+    }
+
+    .song .col p{
+        display: inline;
     }
 
 }
@@ -480,7 +507,20 @@ footer > .row{
     .popular .col{
         width: calc((100% /4) - 24px);
     }
+
+    .song .col div{
+        display: inline;
+        padding: 0px 8px;
+        color: #808080;
+    }
+
+    .song-bar{
+        width: 340px;
+    }
     
+    .extra i{
+        padding: 0px 10px;
+    }
 }
 
 /*Large Devices*/
