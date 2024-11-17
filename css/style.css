@@ -159,7 +159,7 @@ header{
 }
 
 .playlist h3, .playlist button,
-.playlist span, .playlist ul{
+.playlist a, .playlist ul{
     display: none;
 }
 
@@ -322,6 +322,24 @@ main{
     width: calc((100% /2) - 24px);
 }
 
+.art{
+    position: relative;
+}
+
+.play{
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    line-height: 150px;
+    font-size: 50px;
+    color: #fff;
+}
+
 .title-album h4{
     color: #fff;
     text-align: center;
@@ -467,10 +485,41 @@ footer > .row{
     cursor: pointer;
 }
 
-/*.rep-song-bar{
-    width: 20px;
+.rep-song-bar{
+    width: 30px;
+    height: 6px;
     color: white;
-}*/
+    background-color: #fff;
+    border-radius: 10px;
+    margin-top: -6px;
+    cursor: pointer;
+}
+
+.circle{
+    color: transparent;
+    background-color: transparent;
+    border-radius: 100%;
+    width: 14px;
+    height: 14px;
+    margin-top: -10px;
+    margin-left: 20px;
+    margin-bottom: -3px;
+}
+
+.circle:hover{
+    color: #fff;
+    background-color: #fff;
+    border-radius: 100%;
+    width: 14px;
+    height: 14px;
+    margin-top: -10px;
+    margin-left: 20px;
+}
+
+.rep-song-bar:hover{
+    color: #adff2f;
+    background-color: #adff2f;
+}
 
 .extra{
     width: 28%;
@@ -486,7 +535,7 @@ footer > .row{
 }
 
 .volume-bar{
-    width: 120px;
+    width: 80px;
     height: 6px;
     color: transparent;
     background-color: #808080;
@@ -536,7 +585,7 @@ footer > .row{
     }
 
     .playlist h3, .playlist button,
-    .playlist span, .playlist ul{
+    .playlist a, .playlist ul{
         display: inline-block;
     }
 
@@ -589,6 +638,11 @@ footer > .row{
 
     .song-bar{
         width: 300px;
+    }
+
+    .volume-bar{
+        width: 120px;
+        height: 6px;
     }
     
     .extra i{
