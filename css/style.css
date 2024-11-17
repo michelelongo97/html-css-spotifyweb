@@ -165,8 +165,14 @@ header{
     font-size: 24px;
 }
 
-.playlist span{
+.playlist a{
     padding-left: 8px;
+    text-decoration: none;
+    color: #808080;
+}
+
+.playlist button:hover{
+    background-color: #fff;
 }
 
 .playlist ul{
@@ -176,6 +182,15 @@ header{
 .playlist li{
     padding: 8px 0;
     font-size: 13px;
+}
+
+.playlist li a{
+    color: #808080;
+    text-decoration: none;
+}
+
+.playlist a:hover{
+    color: white;
 }
 
 .header-bottom{
@@ -199,11 +214,16 @@ header{
     height: 26px;
 }
 
-.download span{
+.download a{
     display: none;
     padding: 0px 10px;
     color: #808080;
     font-size: 13px;
+    text-decoration: none;
+}
+
+.download a:hover{
+    color: #fff;
 }
 
 .user-profile span{
@@ -266,6 +286,10 @@ main{
     text-decoration: none;
     color: #808080;
     font-size: 12px;
+}
+
+.main-navbar a:hover{
+    color: white;
 }
 
 .album h3, .created h3, .popular h3{
@@ -457,6 +481,18 @@ footer > .row{
        
     }
 
+    .header-nav ul li:first-child{
+        border-left: 3px solid #adff2f;
+    }
+
+    .header-nav ul li:not(:first-child){
+        border-left: 3px solid black;
+    }
+
+    .header-nav ul li:not(:first-child) span{
+        color: #808080;
+    }
+
     .header-nav li span{
         display: inline;
         color: white;
@@ -472,7 +508,7 @@ footer > .row{
         padding-right: 10px;
     }
 
-    .download span, .user-profile span{
+    .download a, .user-profile span{
         display: inline-block;
     }
 
