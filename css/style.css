@@ -25,6 +25,7 @@
 ------------------*/
 .img-fluid {
     max-width: 100%;
+    cursor: pointer;
 }
 
 /*----------------
@@ -82,12 +83,16 @@ body {
     
 }
 
-.x{
+.big-btn{
     background-color: transparent;
     border-radius: 30px;
     color: white;
     padding: 10px 30px;
+    cursor: pointer;
+}
 
+.big-btn:hover{
+    transform: scale(1.1);
 }
 
 .btn-large {
@@ -132,6 +137,7 @@ header{
     display: none;
     padding-left: 8px;
     font-size: 13px;
+    cursor: pointer;
 }
 
 .header-nav li{
@@ -143,6 +149,7 @@ header{
 
 .header-nav li img{
     height: 26px;
+    cursor: pointer;
 }
 
 .playlist{
@@ -288,6 +295,16 @@ main{
     font-size: 12px;
 }
 
+.main-navbar hr{
+    color: #adff2f;
+    background-color: #adff2f;
+    margin-top: 4px;
+    height: 4px;
+    width: 20px;
+    border-radius: 10px;
+    margin-left: 30px;
+}
+
 .main-navbar a:hover{
     color: white;
 }
@@ -385,11 +402,13 @@ footer > .row{
 .song .col h4{
     color: #fff;
     font-size: 16px;
+    cursor: pointer;
 }
 
 .song .col p{
     color: #808080;
     font-size: 12px;
+    cursor: pointer;
 }
 
 .song .col:nth-child(2){
@@ -399,6 +418,12 @@ footer > .row{
 .song .col div i{
     font-size: 16px;
     color: #808080;
+    cursor: pointer;
+}
+
+.song .col i:hover,
+.song .col p:hover{
+    color: #fff;
 }
 
 .player{
@@ -413,13 +438,18 @@ footer > .row{
 
 .player .col i{
     color: #fff;
-    font-size: 26px;
+    font-size: 22px;
     padding: 0px 10px;
+    cursor: pointer;
 }
 
 .player .col i:nth-child(3){
     font-size: 40px;
-    padding: 0px 30px;
+    padding: 0px 24px;
+}
+
+.player .col i:nth-child(3):hover{
+    transform: scale(1.1);
 }
 
 .player .col p{
@@ -429,11 +459,12 @@ footer > .row{
 }
 
 .song-bar{
-    width: 180px;
+    width: 160px;
     height: 6px;
     color: transparent;
     background-color: #808080;
     border-radius: 10px;
+    cursor: pointer;
 }
 
 /*.rep-song-bar{
@@ -451,6 +482,7 @@ footer > .row{
 .extra i{
     color: white;
     padding: 0px 4px;
+    cursor: pointer;
 }
 
 .volume-bar{
@@ -459,6 +491,7 @@ footer > .row{
     color: transparent;
     background-color: #808080;
     border-radius: 10px;
+    cursor: pointer;
 }
 
 /*----------------
@@ -491,6 +524,10 @@ footer > .row{
 
     .header-nav ul li:not(:first-child) span{
         color: #808080;
+    }
+
+    .header-nav ul li:not(:first-child) span:hover{
+        color: #fff;
     }
 
     .header-nav li span{
@@ -551,7 +588,7 @@ footer > .row{
     }
 
     .song-bar{
-        width: 340px;
+        width: 300px;
     }
     
     .extra i{
