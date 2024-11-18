@@ -272,6 +272,7 @@ main{
     top: 0;
     right: 0;
     height: 82px;
+    z-index: 9;
 }
 
 .banner button{
@@ -280,16 +281,17 @@ main{
     right: 4px;
 }
 
-.main-navbar{
+.main-navbar ul{
     display: flex;
     justify-content: center;
     padding-top: 20px;
     width: 100%;
     flex-wrap: wrap;
+    list-style: none;
     
 }
 
-.main-navbar a{
+.main-navbar li a{
     text-decoration: none;
     color: #808080;
     font-size: 12px;
@@ -305,7 +307,7 @@ main{
     margin-left: 30px;
 }
 
-.main-navbar a:hover{
+.main-navbar li a:hover{
     color: white;
 }
 
