@@ -35,8 +35,6 @@
     max-width: 1400px;
     margin-left: auto;
     margin-right: auto;
-    /* padding-left: 20px;
-    padding-right: 20px; */
 }
 
 .row {
@@ -54,10 +52,6 @@
     gap: 30px;
 }
 
-/*.col {
-    flex-grow: 1;
-}*/
-
 .big{
     display: flex;
     height: calc(100% - 90px);
@@ -67,7 +61,7 @@
     TYPOGRAPHY
 ------------------*/
 body {
-    font-family: "Montserrat", sans-serif;
+    font-family: "Poppins", sans-serif;
     height: 100vh;
 }
 
@@ -80,7 +74,6 @@ body {
     border: none;
     padding: 0px 6px;
     cursor: pointer;
-    
 }
 
 .big-btn{
@@ -115,7 +108,6 @@ header{
     display: flex;
     flex-direction: column;
     overflow-y: auto;
-    
 }
 
 .logo-small{
@@ -241,7 +233,6 @@ header{
 .download{
     padding-bottom: 10px;
     padding-right: 5px;
-
 }
 
 .user-profile{
@@ -288,7 +279,6 @@ main{
     width: 100%;
     flex-wrap: wrap;
     list-style: none;
-    
 }
 
 .main-navbar li a{
