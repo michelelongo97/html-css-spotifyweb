@@ -326,18 +326,27 @@ main{
     position: relative;
 }
 
-.play{
+.art img{
     display: block;
+}
+
+.play{
     position: absolute;
     top: 0;
     right: 0;
-    background-color: rgba(0, 0, 0, 0.8);
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    line-height: 150px;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.6);
     font-size: 50px;
     color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+}
+
+.art:hover .play{
+    opacity: 1;
 }
 
 .title-album h4{
@@ -637,16 +646,16 @@ footer > .row{
     }
 
     .song-bar{
-        width: 300px;
+        width: 240px;
     }
 
     .volume-bar{
-        width: 120px;
+        width: 80px;
         height: 6px;
     }
     
     .extra i{
-        padding: 0px 10px;
+        padding: 0px 4px;
     }
 }
 
@@ -664,6 +673,18 @@ footer > .row{
 
     .popular .col{
         width: calc((100% /6) - 24px);
+    }
+
+    .song-bar{
+        width: 300px;
+    }
+
+    .volume-bar{
+        width: 120px;
+    }
+
+    .extra i{
+        padding: 0px 10px;
     }
     
 }
