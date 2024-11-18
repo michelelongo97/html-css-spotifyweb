@@ -101,6 +101,7 @@ body {
 /*----------------
     HEADER
 ------------------*/
+
 header{
     width: 50px;
     flex-shrink: 0;
@@ -127,6 +128,7 @@ header{
 
 .header-nav li span{
     display: none;
+    color: #fff;
     padding-left: 8px;
     font-size: 13px;
     cursor: pointer;
@@ -142,6 +144,14 @@ header{
 .header-nav li img{
     height: 26px;
     cursor: pointer;
+}
+
+.header-nav ul li:not(:first-child) span{
+    color: #808080;
+}
+
+.header-nav ul li:not(:first-child) span:hover{
+    color: #fff;
 }
 
 .playlist{
@@ -246,11 +256,10 @@ header{
     height: 30px;
 }
 
-
-
 /*----------------
     MAIN
 ------------------*/
+
 main{
     flex-grow: 1;
     background-color: #141922;
@@ -284,7 +293,7 @@ main{
 .main-navbar li a{
     text-decoration: none;
     color: #808080;
-    font-size: 12px;
+    font-size: 14px;
 }
 
 .main-navbar hr{
@@ -358,12 +367,11 @@ main{
     width: calc((100% /2) - 24px);
 }
 
-.created h3{
-    color: #fff;
+.created h3, .popular h3{
     padding-bottom: 6px;
 }
 
-.created p{
+.created p, .popular p{
     color: #808080;
     padding-bottom: 20px;
     font-size: 13px;
@@ -373,25 +381,14 @@ main{
     width: calc((100% /2) - 24px);
 }
 
-.popular h3{
-    color: #fff;
-    padding-bottom: 6px;
-}
-
-.popular p{
-    color: #808080;
-    padding-bottom: 20px;
-    font-size: 13px;
-}
-
 .popular .art img{
     border-radius: 50%;
 }
 
-
 /*----------------
     FOOTER
 ------------------*/
+
 footer{
     height: 90px;
     background-color: #282828;
@@ -399,7 +396,7 @@ footer{
 
 footer > .row{
     align-items: center;
-    padding: 10px 6px;
+    padding: 8px 6px;
 }
 
 .song{
@@ -407,7 +404,6 @@ footer > .row{
 }
 
 .song .row{
-    /*padding-top: 20px;*/
     align-items: center;
     justify-content: flex-start;
     flex-wrap: nowrap;
@@ -549,6 +545,7 @@ footer > .row{
 ------------------*/
 
 /*Small Devices*/
+
 @media screen and (min-width: 576px) {
     header {
         width: 240px;
@@ -561,7 +558,6 @@ footer > .row{
 
     .logo-large{
         display: block;
-       
     }
 
     .header-nav ul li:first-child{
@@ -572,17 +568,8 @@ footer > .row{
         border-left: 3px solid black;
     }
 
-    .header-nav ul li:not(:first-child) span{
-        color: #808080;
-    }
-
-    .header-nav ul li:not(:first-child) span:hover{
-        color: #fff;
-    }
-
     .header-nav li span{
         display: inline;
-        color: white;
     }
 
     .playlist h3, .playlist button,
@@ -591,8 +578,7 @@ footer > .row{
     }
 
     .header-bottom{
-        padding-left: 10px;
-        padding-right: 10px;
+        padding: 0 10px;
     }
 
     .download a, .user-profile span{
@@ -602,7 +588,6 @@ footer > .row{
     .download{
         width: 100%;
         border-bottom: 1px solid #808080
-        
     }
 
     .user-profile{
@@ -619,14 +604,8 @@ footer > .row{
 
 @media screen and (min-width: 640px) {
 
-    .album .col{
-        width: calc((100% /4) - 24px);
-    }
-
-    .created .col{
-        width: calc((100% /4) - 24px);
-    }
-
+    .album .col,
+    .created .col,
     .popular .col{
         width: calc((100% /4) - 24px);
     }
@@ -634,7 +613,6 @@ footer > .row{
     .song .col div{
         display: inline;
         padding: 0px 8px;
-        color: #808080;
     }
 
     .song-bar{
@@ -643,30 +621,24 @@ footer > .row{
 
     .volume-bar{
         width: 80px;
-        height: 6px;
     }
     
     .extra i{
         padding: 0px 4px;
     }
+
 }
 
 /*Large Devices*/
 
 @media screen and (min-width: 876px) {
 
-    .album .col{
-        width: calc((100% /6) - 24px);
-    }
-    
-    .created .col{
-        width: calc((100% /6) - 24px);
-    }
-
+    .album .col,
+    .created .col,
     .popular .col{
         width: calc((100% /6) - 24px);
     }
-
+    
     .song-bar{
         width: 300px;
     }
@@ -680,7 +652,3 @@ footer > .row{
     }
     
 }
-
-
-
-
