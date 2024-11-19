@@ -322,7 +322,8 @@ main{
 }
 
 .album .col{
-    width: calc((100% /2) - 24px);
+    width: calc(100% /2);
+    padding: 0px 6px;
 }
 
 .art{
@@ -371,7 +372,8 @@ main{
 }
 
 .created .col{
-    width: calc((100% /2) - 24px);
+    width: calc(100% /2);
+    padding: 0px 6px;
 }
 
 .created h3, .popular h3{
@@ -385,7 +387,8 @@ main{
 }
 
 .popular .col{
-    width: calc((100% /2) - 24px);
+    width: calc(100% /2);
+    padding: 0px 6px;
 }
 
 .popular .art img{
@@ -614,7 +617,8 @@ footer > .row{
     .album .col,
     .created .col,
     .popular .col{
-        width: calc((100% /4) - 24px);
+        width: calc(100% /4);
+        padding: 0px 6px;
     }
 
     .song .col div{
@@ -643,7 +647,8 @@ footer > .row{
     .album .col,
     .created .col,
     .popular .col{
-        width: calc((100% /6) - 24px);
+        width: calc(100% /6);
+        padding: 0px 6px;
     }
     
     .song-bar{
