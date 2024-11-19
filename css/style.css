@@ -82,6 +82,7 @@ body {
     color: white;
     padding: 10px 30px;
     cursor: pointer;
+    border: 1px solid white;
 }
 
 .big-btn:hover{
@@ -172,10 +173,10 @@ header{
 
 .playlist button{
     font-size: 24px;
+    margin-right: 8px;
 }
 
 .playlist a{
-    padding-left: 8px;
     text-decoration: none;
     color: #808080;
 }
@@ -186,6 +187,7 @@ header{
 
 .playlist ul{
     padding-top: 14px;
+    list-style: none;
 }
 
 .playlist li{
@@ -348,6 +350,11 @@ main{
 
 .art:hover .play{
     opacity: 1;
+}
+
+.popular .art:hover .play{
+    opacity: 1;
+    border-radius: 100%;
 }
 
 .title-album h4{
